@@ -20,20 +20,20 @@
                         {{ __('Mail') }}
                     </flux:sidebar.item>
 
-                    <flux:sidebar.item icon="arrow-long-left" :href="route('boton_1')" :current="request()->routeIs('boton_1')" wire:navigate>
-                        {{ __('Boton 1') }}
+                    <flux:sidebar.item icon="inbox" :href="route('correo_1')" :current="request()->routeIs('correo_1')" wire:navigate>
+                        {{ __('Correo 1') }}
                     </flux:sidebar.item>
 
-                    <flux:sidebar.item icon="arrow-long-down" :href="route('boton_2')" :current="request()->routeIs('boton_2')" wire:navigate>
-                        {{ __('Boton 2') }}
+                    <flux:sidebar.item icon="inbox" :href="route('correo_2')" :current="request()->routeIs('correo_2')" wire:navigate>
+                        {{ __('Correo 2') }}
                     </flux:sidebar.item>
 
-                    <flux:sidebar.item icon="arrow-long-right" :href="route('boton_3')" :current="request()->routeIs('boton_3')" wire:navigate>
-                        {{ __('Boton 3') }}
+                    <flux:sidebar.item icon="inbox" :href="route('correo_3')" :current="request()->routeIs('correo_3')" wire:navigate>
+                        {{ __('Correo 3') }}
                     </flux:sidebar.item>
 
-                    <flux:sidebar.item icon="arrow-long-up" :href="route('boton_4')" :current="request()->routeIs('boton_4')" wire:navigate>
-                        {{ __('Boton 4') }}
+                    <flux:sidebar.item icon="inbox" :href="route('correo_4')" :current="request()->routeIs('correo_4')" wire:navigate>
+                        {{ __('Correo 4') }}
                     </flux:sidebar.item>
 
                 </flux:sidebar.group>

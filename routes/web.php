@@ -7,10 +7,10 @@ Route::view('/', 'welcome')->name('home');
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::view('dashboard', 'dashboard')->name('dashboard');
     Route::view('mail', 'mail')->name('mail');  
-    Route::view('boton_1', 'boton_1')->name('boton_1');
-    Route::view('boton_2', 'boton_2')->name('boton_2');
-    Route::view('boton_3', 'boton_3')->name('boton_3');
-    Route::view('boton_4', 'boton_4')->name('boton_4');
+    Route::view('correo_1', 'correo_1')->name('correo_1');
+    Route::view('correo_2', 'correo_2')->name('correo_2');
+    Route::view('correo_3', 'correo_3')->name('correo_3');
+    Route::view('correo_4', 'correo_4')->name('correo_4');
 });
 
 require __DIR__.'/settings.php';
