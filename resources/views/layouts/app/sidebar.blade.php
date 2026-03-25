@@ -36,6 +36,22 @@
                         {{ __('Correo 4') }}
                     </flux:sidebar.item>
 
+                    <flux:sidebar.item icon="inbox" :href="route('dashboard.color1')" :current="request()->routeIs('dashboard.color1')" wire:navigate>
+                        {{ __('Cambiar Color y Mensaje 1') }}
+                    </flux:sidebar.item>
+
+                    <flux:sidebar.item icon="inbox" :href="route('dashboard.color2')" :current="request()->routeIs('dashboard.color2')" wire:navigate>
+                        {{ __('Cambiar Color y Mensaje 2') }}
+                    </flux:sidebar.item>
+
+                    <flux:sidebar.item icon="inbox" :href="route('dashboard.color3')" :current="request()->routeIs('dashboard.color3')" wire:navigate>
+                        {{ __('Cambiar Color y Mensaje 3') }}
+                    </flux:sidebar.item>
+
+                    <flux:sidebar.item icon="inbox" :href="route('dashboard.color4')" :current="request()->routeIs('dashboard.color4')" wire:navigate>
+                        {{ __('Cambiar Color y Mensaje 4') }}
+                    </flux:sidebar.item>
+
                 </flux:sidebar.group>
             </flux:sidebar.nav>
 
