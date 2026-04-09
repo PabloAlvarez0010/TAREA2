@@ -12,7 +12,7 @@
 
             <flux:sidebar.nav>
                 <flux:sidebar.group :heading="__('Platform')" class="grid">
-                    <flux:sidebar.item icon="home" :href="route('dashboard')" :current="request()->routeIs('dashboard')" wire:navigate>
+                    <flux:sidebar.item icon="home" :href="route('dashboard')" :current="request()->routeIs('dashboard') && request()->route('tipo') == null" wire:navigate>
                         {{ __('Dashboard') }}
                     </flux:sidebar.item>
 
@@ -36,19 +36,19 @@
                         {{ __('Correo 4') }}
                     </flux:sidebar.item>
 
-                    <flux:sidebar.item icon="inbox" :href="route('dashboard.color1')" :current="request()->routeIs('dashboard.color1')" wire:navigate>
+                     <flux:sidebar.item icon="inbox" :href="route('dashboard', ['tipo' => 'color1'])" :current="request()->routeIs('dashboard') && request()->route('tipo') == 'color1'" wire:navigate>
                         {{ __('Cambiar Color y Mensaje 1') }}
                     </flux:sidebar.item>
 
-                    <flux:sidebar.item icon="inbox" :href="route('dashboard.color2')" :current="request()->routeIs('dashboard.color2')" wire:navigate>
+                    <flux:sidebar.item icon="inbox" :href="route('dashboard', ['tipo' => 'color2'])" :current="request()->routeIs('dashboard') && request()->route('tipo') == 'color2'" wire:navigate>
                         {{ __('Cambiar Color y Mensaje 2') }}
                     </flux:sidebar.item>
 
-                    <flux:sidebar.item icon="inbox" :href="route('dashboard.color3')" :current="request()->routeIs('dashboard.color3')" wire:navigate>
+                    <flux:sidebar.item icon="inbox" :href="route('dashboard', ['tipo' => 'color3'])" :current="request()->routeIs('dashboard') && request()->route('tipo') == 'color3'" wire:navigate>
                         {{ __('Cambiar Color y Mensaje 3') }}
                     </flux:sidebar.item>
 
-                    <flux:sidebar.item icon="inbox" :href="route('dashboard.color4')" :current="request()->routeIs('dashboard.color4')" wire:navigate>
+                    <flux:sidebar.item icon="inbox" :href="route('dashboard', ['tipo' => 'color4'])" :current="request()->routeIs('dashboard') && request()->route('tipo') == 'color4'" wire:navigate>
                         {{ __('Cambiar Color y Mensaje 4') }}
                     </flux:sidebar.item>
 
